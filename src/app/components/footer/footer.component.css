@@ -1,0 +1,135 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 60px;
+}
+
+.ofertas-email {
+  padding: 24px 32px;
+  gap: 12px;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ofertas-email .form-ofertas-email {
+  gap: 8px;
+  width: 40%;
+}
+
+.ofertas-email .form-ofertas-email input {
+  border: none;
+  padding: 8px 20px;
+  background-color: var(--color-gray-1);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.ofertas-email .form-ofertas-email button {
+  color: var(--color-white-1);
+  padding: 8px 24px;
+  background-color: var(--color-blue-1);
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.ofertas-email .form-ofertas-email button:hover {
+  background-color: var(--color-blue-2);
+}
+
+.footer-background {
+  background-color: var(--color-blue-1);
+}
+
+.footer-container-2 {
+  padding: 100px 60px;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.contato-info ul li {
+  margin-bottom: 32px;
+}
+
+.contato-info h2 {
+  color: var(--color-white-2);
+}
+
+.contato-info span {
+  color: var(--color-gray-text);
+}
+
+.paginas-nav li {
+  margin-bottom: 8px;
+}
+
+.paginas-nav li a {
+  padding: 8px 24px;
+  color: var(--color-white-2);
+}
+
+.paginas-nav li a:hover {
+  color: var(--color-dark-blue-text);
+}
+
+.footer-redes-sociais {
+  flex-direction: column;
+}
+
+.footer-redes-sociais ul {
+  gap: 20px;
+}
+
+.footer-redes-sociais h2 {
+  margin-bottom: 12px;
+  color: var(--color-white-2);
+}
+
+.footer-redes-sociais {
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .contato-info h2 {
+    font-size: 1rem;
+  }
+  .paginas-nav a {
+    font-size: 1rem;
+  }
+  .footer-redes-sociais h2 {
+    font-size: 1rem;
+  }
+  .ofertas-email {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ofertas-email .form-ofertas-email {
+    width: 100%;
+  }
+  .contato-info ul li {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 870px) {
+  .footer-container-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .paginas-nav li a {
+    padding: 12px 20px 12px 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-container {
+    padding: 32px 0px;
+  }
+  .footer-container-2 {
+    padding: 100px 32px !important;
+  }
+}

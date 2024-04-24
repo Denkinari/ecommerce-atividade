@@ -1,0 +1,114 @@
+.carrossel-container {
+  padding: 0px 60px;
+  height: auto;
+  position: relative;
+}
+
+.product {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 53, 79, 1) 0%,
+    rgba(7, 25, 43, 1) 100%
+  );
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 400px;
+  height: 650px;
+  box-sizing: border-box;
+}
+
+.product .add-cart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-green);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.product .product-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.product .product-img img {
+  width: 250px;
+  max-height: 250px;
+  height: auto;
+}
+
+.produto-nome {
+  color: var(--color-white-text);
+  margin-bottom: 8px;
+  line-height: 110%;
+}
+
+.product span {
+  display: block;
+}
+
+.produto-preco-dividido {
+  color: var(--color-dark-gray-text);
+}
+
+.produto-preco {
+  color: var(--color-white-text);
+}
+
+.produto-desconto-pix {
+  color: var(--color-green);
+  margin-bottom: 32px;
+}
+
+.carrossel-product-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.75rem;
+  padding: 12px 24px;
+  color: var(--color-white-text);
+  background: linear-gradient(180deg, #1a354f 0%, #07192b 72%);
+  box-shadow: 0px 0px 60px 4px #2275f1 inset;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.carrossel-product-button:hover {
+  box-shadow: 0px 0px 60px 4px #1869e2 inset;
+  color: #e2e2e2;
+}
+
+swiper-container {
+  width: auto;
+  height: 850px !important;
+  padding: 0px;
+}
+
+swiper-slide {
+  display: flex;
+  width: fit-content !important;
+  align-items: center;
+}
+
+swiper-container::part(button-next) {
+  color: transparent;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/img/svg/arrow-right.svg");
+  background-size: contain;
+  top: 32px;
+}
+
+swiper-container::part(button-prev) {
+  color: transparent;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/img/svg/arrow-left.svg");
+  background-size: contain;
+  top: 32px;
+  left: 90%;
+}
